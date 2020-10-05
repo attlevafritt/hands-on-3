@@ -8,7 +8,7 @@ from ase import units
 def calcenergy(a):
     # potential and kinetic energy calculated per atom.
     """Function to print the potential, kinetic and total energy."""
-    epot = a.get_potential_energy() / len(a)
+    epot = 80*a.get_potential_energy() / len(a)
     ekin = a.get_kinetic_energy() / len(a)
     return (epot, ekin) # return tuple 
 
@@ -27,7 +27,7 @@ def run_md():
     
         # Set up a crystal
     atoms = FaceCenteredCubic(directions=[[1, 0, 0], [0, 1, 0], [0, 0, 1]],
-                              symbol="Si",
+                              symbol="Cu",
                               size=(size, size, size),
                               pbc=True)
 
