@@ -27,7 +27,7 @@ def run_md():
     
         # Set up a crystal
     atoms = FaceCenteredCubic(directions=[[1, 0, 0], [0, 1, 0], [0, 0, 1]],
-                              symbol="Cu",
+                              symbol="Si",
                               size=(size, size, size),
                               pbc=True)
 
