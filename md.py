@@ -8,6 +8,7 @@ from ase import units
 def calcenergy(a):
     # potential and kinetic energy calculated per atom.
     """Function to print the potential, kinetic and total energy."""
+    #Now I've done test
     epot = a.get_potential_energy() / len(a)
     ekin = a.get_kinetic_energy() / len(a)
     return (epot, ekin) # return tuple 
